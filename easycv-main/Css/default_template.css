@@ -1,0 +1,279 @@
+/* --------Global reset and body css----------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #1f1f1f;
+}
+/* ******Global reset and body css ENDS********** */
+/* ______________________________________________ */
+
+/* --------Blank line with color  css--------- */
+.blank-row-color {
+  grid-column: 1/-1;
+  /* background-color: #faa2c1; */
+  height: 50px;
+}
+.hr {
+  border-bottom: 2px solid #525151;
+}
+
+/* *********** Blank line with color  ENDS********* */
+
+/* _____________________________________________________ */
+
+/* --------------- Text related css------------ */
+.text-large {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  font-size: 38px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.about-me {
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+.reach-out-text {
+  line-height: 1.4;
+}
+.topic-resume {
+  text-align: center;
+  margin-top: 1%;
+  font-weight: 600;
+  font-size: 26px;
+  color: #525151;
+}
+.text-less-highlight {
+  color: #2b2b2b;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+.text-high-highlight {
+  color: #1f1f1f;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.text-profession {
+  letter-spacing: 1px;
+  font-size: 22px;
+  color: #525151;
+}
+.topic-bold {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+/* ****** Text Related CSS ENDs ************************* */
+/* _____________________________________________________ */
+
+/* -----------Icon related CSS starts--------- */
+.icon {
+  width: 20px;
+  height: auto;
+  color: #2d2c2c;
+  display: inline-block;
+}
+.icon-flex {
+  display: flex;
+  gap: 12px;
+}
+.icon-properties {
+  height: auto;
+  width: 20px;
+}
+/* ****** Icon related CSS Ends here ********* */
+/* _____________________________________________________ */
+
+/* -------------Image related CSS starts here-------- */
+.profile-img {
+  width: 200px;
+  height: auto;
+}
+/* ************** Image related CSS Ends here ****** */
+
+/* _____________________________________________________ */
+
+/* ------------------DIV related CSS start here------- */
+.container {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  row-gap: 30px;
+  column-gap: 10px;
+}
+.div-main-name-profession {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.div-experience-item {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 5px;
+}
+.div-child-item-grid {
+  display: grid;
+  grid-template-columns: 450px auto;
+  row-gap: 30px;
+  column-gap: 15px;
+}
+.div-education-item {
+  margin-bottom: 18px;
+  display: flex;
+  gap: 5px;
+}
+.div-language {
+  grid-column: 1/2;
+}
+.div-references {
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+
+/* ****************DIV related CSS ends here*********** */
+.helper {
+  /* margin: 0 auto; */
+  margin-left: 34px;
+}
+.helper-1 {
+  display: inline-block;
+  margin-left: 0px;
+  margin-bottom: 6px;
+}
+
+.margin-left {
+  margin-left: 34px;
+}
+
+.margin-left-edu-exp {
+  margin-left: 15.5px;
+}
+
+@media print and (min-width: 480px) {
+  body {
+    font-size: 14px;
+    background-color: white;
+  }
+  .profile-img {
+    width: 140px;
+    height: auto;
+    margin-left: 20px;
+  }
+  .topic-bold {
+    margin-bottom: 6px;
+  }
+  /* Text related media query  */
+  .about-me {
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    letter-spacing: 0.7px;
+    word-spacing: 0px;
+  }
+  .text-large {
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    font-size: 22px;
+  }
+  .text-less-highlight {
+    color: #2b2b2b;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+  .text-high-highlight {
+    color: #1f1f1f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+  .reach-out-text {
+    line-height: 1.4;
+    font-size: 14px;
+  }
+  .text-profession {
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #525151;
+  }
+  .topic-bold {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  /* Text related media query ends here */
+  /* -----------Icon related mediaQuery starts--------- */
+  .icon {
+    width: 16px;
+    height: auto;
+    color: #2d2c2c;
+    display: inline-block;
+  }
+  .icon-flex {
+    display: flex;
+    gap: 8px;
+  }
+  .icon-properties {
+    width: 16px;
+    height: auto;
+  }
+  /* ****** Icon related mediaQuery Ends here ********* */
+  .div-child-item-grid {
+    display: grid;
+    grid-template-columns: 250px auto;
+    row-gap: 30px;
+    column-gap: 15px;
+  }
+  .margin-left {
+    margin-left: 15px;
+  }
+  .helper {
+    margin: 0 0 0 52px;
+  }
+  .container {
+    grid-template-columns: auto 1fr;
+    column-gap: 10px;
+  }
+  .about-me {
+    margin-right: 5%;
+  }
+}
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  /* ... the rest of the rules ... */
+  .div-experience-item,
+  .div-education-item,
+  .div-references-item {
+    page-break-inside: avoid;
+  }
+}
+
+@media print {
+  @page :left {
+    /* Targets all even-numbered pages */
+    margin-top: 2%;
+  }
+
+  @page :right {
+    margin-top: 2%;
+  }
+}

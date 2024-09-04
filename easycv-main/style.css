@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,200;0,300;0,500;1,300&family=Marcellus+SC&display=swap");
+
+/* font-family: 'IBM Plex Mono', monospace; */
+/* font-family: 'Marcellus SC', serif; */
+
+/* Global Reset of margin and Padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  color: #1f1f1f;
+}
+
+/* main conteiner include CV and Template */
+.container {
+  display: none;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* cv-container include cv input field only */
+
+.cv-container {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: rgba(255, 253, 253);
+  margin-top: 20px;
+  box-shadow: 0px 7px 17px 7px rgba(36, 35, 35, 0.16);
+}
+
+.image-div {
+  padding-left: 3.9%;
+}
+
+.cvmain-title {
+  font-family: "Marcellus SC", serif;
+  text-align: center;
+  padding: 18px;
+  letter-spacing: 1.7px;
+  font-size: 38px;
+}
+
+hr {
+  margin-bottom: 2%;
+  color: #1f1f1f;
+}
+
+.profile-pic-title {
+  text-align: left;
+  color: #2b2b2b;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 8px;
+}
+
+.image-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+}
+
+.image {
+  width: 30%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.image-box input {
+  font-size: 18px;
+}
+
+.sub-div {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+form label {
+  font-weight: 500;
+}
+
+.helper {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 18px;
+  color: #1f1f1f;
+  background-color: #ebebeb;
+  border: none;
+  border-radius: 6px;
+  font-family: inherit;
+  box-shadow: 0px 1px 4px 0px #bbbbbb;
+  margin-bottom: 14px;
+  width: 96.8%;
+}
+
+.address {
+  width: 95%;
+  margin-left: 3%;
+}
+
+.clear {
+  background-color: #ffffff;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0.2px 2px #999999;
+}
+
+.image-box input {
+  box-shadow: none;
+}
+
+.btn-more {
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  box-shadow: 0 0 0 2px #0f9d58;
+  color: #ed5135;
+  font-weight: bold;
+  transition: color 1s ease-in-out;
+  border-radius: 1.5px;
+  /* transition: box-shadow 1s ease-in-out; */
+}
+
+.btn-more:hover {
+  box-shadow: 0 0 0 2px #ed5135;
+  border: none;
+}
+
+.div-common {
+  display: none;
+  margin-bottom: 20px;
+
+  /* height: 580px; */
+}
+
+/*setting of Alldivs */
+
+.cv-title {
+  font-family: "Marcellus SC", serif;
+  padding-bottom: 1%;
+  font-size: 18px;
+  text-align: center;
+  color: #888787;
+}
+
+/* setting of sub container and sub div */
+.sub-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 4%;
+}
+
+.otherTitle {
+  margin-left: 3%;
+}
+
+.open {
+  display: block;
+}
+
+.main-form h2 {
+  margin-bottom: 1px;
+}
+
+.addmore {
+  text-align: right;
+  margin-right: 3%;
+}
+
+.textarea {
+  width: 99%;
+}
+
+.common-class {
+  width: 100%;
+}
+
+.skill-div {
+  width: 50%;
+  margin-left: 5%;
+}
+
+.slider {
+  margin-left: 11%;
+  width: 50%;
+}
+
+/* .common-template {
+  margin-left: 30px;
+  margin-bottom: 10px;
+} */
+.common-template h2 {
+  margin-top: 0px;
+}
+
+/* Button  */
+.finish {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  /* background-color: #cccccc; */
+}
+
+.btn {
+  margin-top: 16px;
+  margin-left: 3%;
+  color: antiquewhite;
+  padding: 14px 28px;
+  /* background-color: #ed5135; */
+  background: linear-gradient(to right, #ed5135, #d8391d);
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: -0.7px;
+  font-size: 22px;
+  border: none;
+}
+
+.btn:hover {
+  /* background-color: #ef6249; */
+  background: linear-gradient(to right, #f0573c, #e65137);
+  color: antiquewhite;
+}
+
+.button {
+  display: flex;
+  margin-right: 3%;
+}
+
+.next-btn {
+  width: 150px;
+  /* background-color: #0f9d58; */
+  background: linear-gradient(to right, #0f9d58, #086c3b);
+}
+
+.next-btn:hover {
+  /* background-color: #27a769; */
+  background: linear-gradient(to right, #2ba469, #21734b);
+  transition: 5s ease-in-out;
+  color: antiquewhite;
+}
+
+.previous-btn {
+  width: 180px;
+  /* background-color: #0f9d58; */
+  background: linear-gradient(to right, #0f9d58, #086c3b);
+}
+
+.previous-btn:hover {
+  /* background-color: #27a769; */
+  background: linear-gradient(to right, #2ba469, #21734b);
+  transition: 5s ease-in-out;
+  color: antiquewhite;
+}
+
+/* Template Div */
+
+.template-div {
+  display: none;
+}
+
+/* Print Button */
+.printBackButton {
+  width: 100%;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-items: center;
+  justify-content: center;
+  text-align: center;
+  display: none;
+}
+
+.backButton,
+.printCV {
+  padding: 10px;
+  background-color: lightgreen;
+  color: black;
+  border-radius: 10px;
+}
+.scommonForMargin {
+  margin-top: 2%;
+}
